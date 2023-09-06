@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup Example</title>
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1d02b46c83.js" crossorigin="anonymous"></script>
+
+</head>
+          <div class="Button-box">
+            <body>
+                <button class="ct_button" onclick="openPopup()">Contact Me</button>
+                <div id="popup" class="popup">
+                  <i class="fa-solid fa-xmark" onclick="closePopup()"></i>
+                  <h3>Feel Free to Contact Us</h3>
+                  <p>We are available 24/7 live support. If you have any queries fill out with this form. </p>
+                  <div>
+                    <table>
+                      <tr>
+                        <td> <input type="text" placeholder="Enter your Name"></td>
+                      </tr>
+                      <tr>
+                        <td> <input type="number" placeholder="Mobile Number"> </td>
+                      </tr>
+                      <tr>
+                        <td> <input type="text" placeholder="Email"> </td>
+                      </tr>
+                      <tr>
+                        <td> <input type="text" placeholder="Message"></td>
+                      </tr>
+                      <button>
+                        <td> <input type="button" value="Submit"></td>
+                      </button>
+                    </table>
+                  </div>
+                  <!-- <button onclick="closePopup()">Close</button> -->
+                
+                  <script>
+                    let popup = document.getElementById("popup");
+                    function openPopup() {
+                      popup.classList.add("open-popup");
+                    }
+                    function closePopup() {
+                      popup.classList.remove("open-popup");
+                    }
+                  </script>
+                  </body>
+                </div>
+                </section>
+                
+                </html>
